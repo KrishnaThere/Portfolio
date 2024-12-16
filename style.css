@@ -1,0 +1,117 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navigation Styling */
+  nav {
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: center; /* Center the navigation */
+    margin: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    height:4vh;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none; 
+    justify-content: space-between;
+    width: 100%; /* Control spacing between elements */
+  }
+  
+  nav li {
+    margin: 0 1rem; /* Add horizontal spacing */
+  }
+  
+  nav a {
+    font-size: 1.3rem;
+    font-weight:bold;
+    color: red;
+    text-decoration: none; /* Remove underline */
+    /* text-transform: uppercase; */
+  }
+  
+
+  
+  body {
+    background-color: #fff;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column; /* Make the body a vertical container */
+    /* min-height: 100vh; Set minimum height to viewport height */
+}
+
+.title {
+  background: none;
+    height: 80vh;
+    margin: 2.5rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: red;
+    flex-grow: 1; /* Allow the title section to grow to fill remaining space */
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space the rows evenly within the title section */
+    height: 100%; /* Make the rows occupy the full height of the title section */
+    line-height: 0%;
+}
+
+.workin, .progress, .krishna, .shah {
+    display: flex;
+    list-style: none; 
+    justify-content: space-between;
+    width: 100%;
+}
+img {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 0 1rem;
+  position: absolute; /* Required for z-index */
+  z-index: 0; /* Default stacking order */
+}
+
+.photo-face{
+  max-width: 120px; /* Adjust as needed */
+  max-height: 120px; /* Adjust as needed */
+  top:50vh;
+  left:35vw;
+}
+.eyemask{
+top:75vh;
+left:70vw;
+}
+
+.book-back{
+  top:15vh;
+  left:50vw;
+}
+.book-spread{
+  max-width: 130px; /* Adjust as needed */
+  max-height: 130px; /* Adjust as needed */
+  top:30vh;
+  left:80vw;
+}
+.poster{
+  max-width: 150px; /* Adjust as needed */
+  max-height: 150px; /* Adjust as needed */
+  top:70vh;
+  left:10vw;
+}
+.breathe{
+  max-width: 150px; /* Adjust as needed */
+  max-height: 150px; /* Adjust as needed */
+  top:25vh;
+  left:10vw;
+}
+img:hover {
+  transform: scale(3);
+  z-index: 10; /* Place image on top during hover */
+  transition: transform 0.3s ease;
+}
