@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navigation Styling */
+  nav {
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: center; /* Center the navigation */
+    margin: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    height:4vh;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none; 
+    justify-content: space-between;
+    width: 100%; /* Control spacing between elements */
+  }
+  
+  nav li {
+    margin: 0 1rem; /* Add horizontal spacing */
+  }
+  
+  nav a {
+    font-size: 1.3rem;
+    font-weight:bold;
+    color: #fdce1a;
+    text-decoration: none; /* Remove underline */
+    /* text-transform: uppercase; */
+  }
+
+  body {
+    background-color: red;
+    font-family: Helvetica, sans-serif;
+
+}
+.page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.description {
+    position: fixed; /* Fixes description on the left */
+    left: 3rem; /* Adds space from the left */
+    width: 15vw;
+    bottom:5vh;
+
+}
+.description p{
+    font-size: 1.3rem;
+    color: #fdce1a;
+    font-weight: normal;
+}
+
+.project {
+    margin-left: 25vw; /* Pushes the project section to the right of the description */
+    width: calc(100% - 25vw); /* Takes up remaining space */
+    height: 90vh; /* Full viewport height */
+    overflow-y: scroll; /* Makes it scrollable vertically */
+    bottom:0;
+}
+
+
+
+
+.title {
+    
+    background: none;
+      height: 80vh;
+      margin: 2.5rem;
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #fdce1a;
+      flex-grow: 1; /* Allow the title section to grow to fill remaining space */
+  }
+  
+  .rows {
+    
+    width:69vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Space the rows evenly within the title section */
+      height: 100%; /* Make the rows occupy the full height of the title section */
+      line-height: 0%;
+  }
+  
+  .workin, .progress, .krishna, .shah {
+      
+    display: flex;
+      list-style: none; 
+      justify-content: space-between;
+      width: 100%;
+  }
+  .images{
+    margin-top: 100px;
+    bottom:0;
+  }
+  img {
+    width: 75vw; /* Occupies the defined width */
+    height: 80vh; /* Occupies the defined height */
+    object-fit: cover; /* Keeps aspect ratio and fits within the frame */
+}
+.logo{
+    object-fit: contain;
+    background-color: black;
+}
