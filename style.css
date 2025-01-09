@@ -133,6 +133,23 @@ left:70vw;
   left:85vw;
 
 }
+.bin{
+  width:80px;
+  height:auto;
+  top:10vh;
+  left:90vw;
+}
+.cards{
+top:45vh;
+left:0vw;
+width:100px;
+}
+
+.sticker{
+top:45vh;
+left:55vw;
+width:70px;
+}
 img:hover {
   transform: scale(3);
   z-index: 10; /* Place image on top during hover */
