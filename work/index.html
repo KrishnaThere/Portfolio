@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Work in Progress</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+<ul>
+
+<li><a class="work" href="/">Work</a></li>
+
+<li><a class="about" href="https://krishnathere.github.io/Portfolio/">Home</a></li>
+
+<li><a class="connect" href="/">Connect</a></li>
+
+</ul>
+
+</nav>
+<div class="red-column">
+    <ul class="section-list">
+      <li data-section="logo-branding">Logo & Branding</li>
+      <li data-section="editorial-design">Editorial Design</li>
+      <li data-section="interactive-ui">Interactive UI</li>
+      <li data-section="poster-design">Poster Design</li>
+      <li data-section="animation">Animation</li>
+      <li data-section="illustration">Illustration</li>
+      <li data-section="photography">Photography</li>
+    </ul>
+  </div>
+  
+  <div class="content-area">
+    <!-- The grid will dynamically populate here -->
+  </div>
+<script>
+
+    
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section-list li");
+    const contentArea = document.querySelector(".content-area");
+  
+    // Data for each section
+    const sectionData = {
+      "logo-branding": [
+        { title: "Breathe", img: "images/Breathe.png", link: "https://krishnathere.github.io/Portfolio/Breathe/"},
+        { title: "Rushh", img: "images/rushh01.png" },
+        { title: "Dairy Consultancy", img: "images/dairy.png" },
+      
+      ],
+      "editorial-design": [
+        { title: "Evolutionary Thoughts", img: "images/cover.png", link: "https://krishnathere.github.io/Portfolio/Evolutionary_book/" },
+        { title: "Photo-Book", img: "images/face.png" },
+        { title: "Lifescape Book", img: "images/lifescape.jpeg" },
+      ],
+
+      "interactive-ui": [
+        { title: "TheGameMaster", video: "images/website.mp4" },
+        { title: "Eyedropper(Game)", img: "images/face.png" },
+        { title: "EBin App Prototype", img: "path/to/editorial3.jpg" },
+      ],
+      "poster-design": [
+        { title: "Modernism", img: "images/front.png" },
+       
+      ],
+      "animation": [
+        { title: "Breathe", video: "images/typo animation.mp4" },
+        { title: "Self-Love", video: "images/typo animation.mp4" },
+      ],
+      "illustration": [
+        {title: "Lifescape Book", img: "images/lifescape.jpeg" },
+        { title: "Cards-Deck", video: "images/cards.mp4" },
+        { title: "Stickers", img: "images/sticker.png" },
+      ],
+      "photography": [
+        { title: "Evolutionary Thoughts", img: "images/cover.png" },
+        { title: "Editorial 2", img: "path/to/editorial2.jpg" },
+        { title: "Editorial 3", img: "path/to/editorial3.jpg" },
+      ],
+      // Add data for other sections...
+    };
+  
+    // Populate content area
+    function renderContent(section) {
+  contentArea.innerHTML = ""; // Clear existing content
+  const items = sectionData[section] || [];
+  items.forEach((item) => {
+    const div = document.createElement("div");
+    div.className = "content-item";
+
+    // Check if the item has a video or an image
+    if (item.video) {
+      div.innerHTML = `
+        <video autoplay loop muted>
+          <source src="${item.video}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>${item.title}</h3>
+      `;
+    } else if (item.img) {
+      const link = item.link || "#"; // Use the provided link or "#" if none is given
+      div.innerHTML = `
+        <a href="${link}" target="_blank">
+          <img src="${item.img}" alt="${item.title}">
+          <h3>${item.title}</h3>
+        </a>
+      `;
+    }
+    contentArea.appendChild(div);
+  });
+}
+    // Add click event listeners
+    sections.forEach((section) => {
+      section.addEventListener("click", () => {
+        const sectionKey = section.getAttribute("data-section");
+        renderContent(sectionKey);
+      });
+    });
+  });
+</script>
+ 
+
+
+  
