@@ -76,6 +76,13 @@ img {
   position: absolute; /* Required for z-index */
   z-index: 0; /* Default stacking order */
 }
+video{
+  max-width: 130px;
+  max-height: 150px;
+  margin: 0 1rem;
+  position: absolute; /* Required for z-index */
+  z-index: 0; /* Default stacking order */
+}
 
 .photo-face{
   max-width: 120px; /* Adjust as needed */
@@ -83,12 +90,14 @@ img {
   top:50vh;
   left:35vw;
 }
-.eyemask{
+.website{
 top:75vh;
 left:70vw;
 }
 
 .book-back{
+  width:80px;
+
   top:15vh;
   left:50vw;
 }
@@ -96,7 +105,7 @@ left:70vw;
   max-width: 130px; /* Adjust as needed */
   max-height: 130px; /* Adjust as needed */
   top:30vh;
-  left:80vw;
+  left:70vw;
 }
 .poster{
   max-width: 150px; /* Adjust as needed */
@@ -106,11 +115,31 @@ left:70vw;
 }
 .breathe{
   max-width: 150px; /* Adjust as needed */
-  max-height: 150px; /* Adjust as needed */
+  height: 80px; /* Adjust as needed */
   top:25vh;
   left:10vw;
 }
+
+.rushh{
+  width: 300px;
+  height:auto;
+  top:85vh;
+  left:40vw
+}
+
+.lifescape{
+
+  top:60vh;
+  left:85vw;
+
+}
 img:hover {
+  transform: scale(3);
+  z-index: 10; /* Place image on top during hover */
+  transition: transform 0.3s ease;
+}
+
+video:hover {
   transform: scale(3);
   z-index: 10; /* Place image on top during hover */
   transition: transform 0.3s ease;
