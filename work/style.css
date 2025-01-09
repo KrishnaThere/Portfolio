@@ -1,0 +1,233 @@
+* {
+
+    margin: 0;
+    
+    padding: 0;
+    
+    box-sizing: border-box;
+    
+    }
+    
+    
+    /* Navigation Styling */
+    
+    nav {
+      cursor:default;
+    
+    font-family: Helvetica, sans-serif;
+    
+    display: flex;
+    
+    justify-content: center; /* Center the navigation */
+    
+    margin: 1rem;
+    
+    margin-left: 3rem;
+    
+    margin-right: 3rem;
+    
+    height:4vh;
+    
+    }
+    
+    
+    nav ul {
+    
+    display: flex;
+    
+    list-style: none;
+    
+    justify-content: space-between;
+    
+    width: 100%; /* Control spacing between elements */
+    
+    }
+    
+    
+    nav li {
+    
+    margin: 0 1rem; /* Add horizontal spacing */
+    cursor:default;
+    
+    }
+    
+    
+    nav a {
+    
+    font-size: 1.3rem;
+    
+    font-weight:bold;
+    
+    color: red;
+    
+    text-decoration: none; /* Remove underline */
+    
+    cursor:default;
+    /* text-transform: uppercase; */
+    
+    }
+    
+    
+    
+    body {
+    
+    background-color: white;
+    
+    font-family: Helvetica, sans-serif;
+    
+    
+    
+    }
+    
+/* Red column */
+.red-column {
+    position: fixed;
+    top: 9vh;
+    left: 0; /* Hidden off-screen initially */
+    width: 25vw;
+    height: 95vh;
+    background-color: white;
+    color: red;
+    z-index: 1000;
+    transition: left 0.5s ease-in-out; /* Smooth transition */
+    overflow-y: auto;
+  }
+  
+  /* Section list inside the red column */
+  .red-column .section-list {
+    list-style: none;
+    padding: 0;
+    padding-top: 5rem;
+    padding-left: 4rem;
+  }
+  
+  .red-column .section-list li {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    opacity: 0; /* Start hidden */
+    transform: translateX(-20px); /* Start slightly off-screen */
+    animation: slideIn 0.5s ease-out forwards;
+  }
+  
+  /* Staggered animation for each list item */
+  .red-column .section-list li:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .red-column .section-list li:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .red-column .section-list li:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .red-column .section-list li:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  
+  .red-column .section-list li:nth-child(5) {
+    animation-delay: 1s;
+  }
+  
+  .red-column .section-list li:nth-child(6) {
+    animation-delay: 1.2s;
+  }
+  
+  .red-column .section-list li:nth-child(7) {
+    animation-delay: 1.4s;
+  }
+  
+  .red-column .section-list li:hover {
+    text-decoration: underline;
+  }
+  
+  /* Keyframes for the slide-in effect */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .content-area {
+  margin-top:9vh;
+    margin-left: 25vw; /* Align with the red column */
+    width: 75vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-gap: 6rem;
+    padding: 2rem;
+  }
+  
+  .content-item {
+    text-align:left;
+  }
+  
+  .content-item img {
+    max-width: 10rem;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+  }
+
+  .content-item video {
+    max-width: 10rem;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+  }
+  
+  .content-item h3 {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    color: red;
+    text-decoration: none;
+  }
+
+  .content-item link {
+   text-decoration: none;
+  }
+
+  nav a, .content-item a {
+    text-decoration: none; /* Remove underline */
+    color: red; /* Ensure the text color remains red */
+  }
+  
+  
+  @media screen and (max-width: 1024px) {
+    .content-area {
+      grid-template-columns: repeat(4, 1fr); /* 3 columns for medium screens */
+      grid-gap: 5rem;
+    }
+  
+    .content-item h3 {
+      font-size: 1.1rem; /* Smaller text */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .content-area {
+      grid-template-columns: repeat(3, 1fr); /* 2 columns for smaller screens */
+      grid-gap: 4rem;
+    }
+  
+    .content-item h3 {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .content-area {
+      grid-template-columns: repeat(2, 1fr); /* Single column for very small screens */
+      grid-gap: 3rem;
+    }
+  
+    .content-item h3 {
+      font-size: 0.9rem; /* Adjust text size for small screens */
+    }
+  }
