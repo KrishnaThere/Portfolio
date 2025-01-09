@@ -1,0 +1,317 @@
+* {
+
+    margin: 0;
+    
+    padding: 0;
+    
+    box-sizing: border-box;
+    
+    }
+    
+    
+    /* Navigation Styling */
+    
+    nav {
+    
+    font-family: Helvetica, sans-serif;
+    
+    display: flex;
+    
+    justify-content: center; /* Center the navigation */
+    
+    margin: 1rem;
+    
+    margin-left: 3rem;
+    
+    margin-right: 3rem;
+    
+    height:4vh;
+    
+    }
+    
+    
+    nav ul {
+    
+    display: flex;
+    
+    list-style: none;
+    
+    justify-content: space-between;
+    
+    width: 100%; /* Control spacing between elements */
+    
+    }
+    
+    
+    nav li {
+    
+    margin: 0 1rem; /* Add horizontal spacing */
+    
+    }
+    
+    
+    nav a {
+    
+    font-size: 1.3rem;
+    
+    font-weight:bold;
+    
+    color: red;
+    
+    text-decoration: none; /* Remove underline */
+    
+    /* text-transform: uppercase; */
+    
+    }
+    
+    
+    
+    body {
+    
+    background-color: white;
+    
+    font-family: Helvetica, sans-serif;
+    
+    
+    
+    }
+    
+    .page{
+    
+    display: flex;
+    
+    flex-direction: row;
+    
+    justify-content: space-between;
+    
+    width: 100%;
+    
+    }
+    
+
+    .thumbnails img {
+       width: 100px;
+      object-fit: contain;
+
+        margin: 0 1rem;
+        position: absolute; /* Required for z-index */
+       
+      }
+      
+      
+      .thumbnails .video{
+        width: 100px;
+        object-fit: contain;
+  
+          margin: 0 1rem;
+          position: absolute; /* Required for z-index */
+          top:20vh;
+          left:10vw;
+
+      }
+      
+      .thumbnails .home{
+        top:15vh;
+        left:50vw;
+      }
+      .thumbnails .arcade{
+    
+        top:50vh;
+        left:60vw;
+      }
+      .thumbnails .one {
+       
+        top:60vh;
+        left:10vw;
+      }
+      .thumbnails .two{
+        top:65vh;
+        left:35vw;
+        object-fit: contain;
+      }
+
+      .thumbnails .three{
+        top:10vh;
+        left:30vw;
+        object-fit: contain;
+      }
+
+      .thumbnails .four{
+        top:40vh;
+        left:40vw;
+        object-fit: contain;
+      }
+
+      .thumbnails .five{
+        top:80vh;
+        left:60vw;
+        object-fit: contain;
+      }
+      
+      .thumbnails .six{
+        top:40vh;
+        left:20vw;
+        object-fit: contain;
+      }
+
+      .thumbnails .seven{
+        top:80vh;
+        left:0vw;
+        object-fit: contain;
+      }
+
+      .thumbnails .eight{
+        top:30vh;
+        left:68vw;
+        object-fit: contain;
+      }
+
+      .thumbnails img:hover {
+        transform: scale(2.5);
+        transition: transform 0.3s ease;
+        z-index: 100;
+      }
+      .thumbnails video:hover {
+        transform: scale(2.5);
+        transition: transform 0.3s ease;
+        z-index: 100;
+      }
+    
+    
+
+
+    .title {
+    
+    
+        background: none;
+        
+        height: 85vh;
+        
+        margin: 2.5rem;
+        
+        font-size: 2.2rem;
+        
+        font-weight: bold;
+        
+        color: red;
+        
+        
+        }
+        
+        
+        .rows {
+        
+        
+        width:75vw;
+        
+        display: flex;
+        
+        flex-direction: column;
+        
+        justify-content: space-between; /* Space the rows evenly within the title section */
+        
+        height: 100%; /* Make the rows occupy the full height of the title section */
+        
+        line-height: 0%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        
+        }
+        
+        
+        .workin, .progress, .krishna, .shah {
+        
+        
+        display: flex;
+        
+        list-style: none;
+        
+        justify-content: space-between;
+        
+        width: 100%;
+        
+        }
+
+    .description {
+    
+    position: fixed; /* Fixes description on the left */
+    
+    left: 3rem; /* Adds space from the left */
+    
+    width: 15vw;
+    
+    bottom:5vh;
+    
+    
+    
+    }
+    
+    .description p{
+    
+    font-size: 1.3rem;
+    
+    color: red;
+    
+    font-weight: normal;
+    
+    }
+
+
+    
+    
+    .project {
+    
+    margin-left: 20vw; /* Pushes the project section to the right of the description */
+    
+    width: calc(100% - 20vw); /* Takes up remaining space */
+    
+    height: 100vh; /* Full viewport height */
+    
+    overflow-y: scroll; /* Makes it scrollable vertically */
+    
+    bottom:0;
+    position: relative;
+    
+    }
+
+
+   
+    
+    
+    
+    
+    
+    
+    .images{
+    
+    margin-top: 10px;
+    
+    bottom:0;
+    
+    }
+    .images video{
+        width: 80vw; /* Occupies the defined width */
+        height: 100vh;
+        object-fit: contain;
+    }
+    .images img {
+        object-fit: contain;
+    width: 80vw; /* Occupies the defined width */
+    height: 100vh;
+    
+    
+    }
+    .project {
+        scrollbar-width: thin;
+        scrollbar-color: red white;
+      }
+      
+      .project::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      .project::-webkit-scrollbar-thumb {
+        background-color: red;
+        border-radius: 4px;
+      }
+      

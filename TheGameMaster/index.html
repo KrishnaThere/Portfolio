@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Work in Progress</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+<ul>
+
+<li><a class="work" href="/work/">Work</a></li>
+
+<li><a class="about" href="https://krishnathere.github.io/Portfolio/">Home</a></li>
+
+<li><a class="connect" href="/">Connect</a></li>
+
+</ul>
+
+</nav>
+
+<div class="page">
+
+<div class="description">
+
+<p>
+
+A Fun Interactive<br>
+
+Website on games<br>
+
+Skilles developed:<br>
+
+interactive coding<br><br>
+
+
+
+September 4, 2024 <br>
+
+October 25, 2024<br>
+
+VScode/Github<br>
+
+Figma<br>
+p5.js
+
+</p>
+
+</div>
+
+<div class="project">
+   
+<div class="title">
+
+<div class="rows">
+
+<div class="workin">
+
+    <h1>T</h1>
+    <h1>H</h1>
+<h1>E</h1>
+<h1> </h1>
+
+<h1>G</h1>
+
+<h1>A</h1>
+
+<h1>M</h1>
+
+<h1>E</h1>
+
+</div>
+
+<div class="progress">
+
+<h1>M</h1>
+
+<h1>A</h1>
+
+<h1>S</h1>
+
+<h1>T</h1>
+<h1>E</h1>
+<h1>R</h1>
+
+
+</div>
+
+<div class="krishna">
+
+<h1>I</h1>
+
+<h1>N</h1>
+
+<h1>T</h1>
+
+<h1>E</h1>
+
+<h1>R</h1>
+
+<h1>A</h1>
+
+<h1>C</h1>
+<h1>T</h1>
+<h1>I</h1>
+<h1>V</h1>
+<h1>E</h1> 
+
+
+
+
+</div>
+
+<div class="shah">
+
+<h1>W</h1>
+
+<h1>E</h1>
+
+<h1>B</h1>
+
+<h1>S</h1>
+
+<h1>I</h1>
+
+<h1>T</h1>
+
+<h1>E</h1>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="thumbnails">
+    <video muted autoplay loop playsinline src="websiteimages/website.mp4" alt="logo" class="video"> </video>
+    <img src="websiteimages/home.png" alt="logo" class="home">
+    <img src="websiteimages/Arcade.png" alt="" class="arcade">
+    <img src="websiteimages/1.png" alt="" class="one">
+    <img src="websiteimages/2.png" alt="" class="two">
+    <img src="websiteimages/3.png" alt="logo" class="three"> 
+    <img src="websiteimages/4.png" alt="logo" class="four">
+    <img src="websiteimages/5.png" alt="" class="five">
+    <img src="websiteimages/6.png" alt="" class="six">
+    <img src="websiteimages/instructions.png" alt="" class="seven">
+    <img src="websiteimages/buynow.png" alt="" class="eight">
+ 
+
+</div>
+
+
+<div class="images">
+    <video muted autoplay loop playsinline src="websiteimages/website.mp4" alt="logo" controls class="breathe"> </video>
+    <img src="websiteimages/home.png" alt="logo" class="logo">
+    <img src="websiteimages/Arcade.png" alt="" class="crossing">
+    <img src="websiteimages/1.png" alt="" class="bookmark">
+    <img src="websiteimages/2.png" alt="" class="car">
+    <img src="websiteimages/3.png" alt="logo" class="breathe"> 
+    <img src="websiteimages/4.png" alt="logo" class="logo">
+    <img src="websiteimages/5.png" alt="" class="crossing">
+    <img src="websiteimages/6.png" alt="" class="bookmark">
+    <img src="websiteimages/instructions.png" alt="" class="car">
+    <img src="websiteimages/buynow.png" alt="" class="car">
+ 
+</div>
+
+</div>
+
+</div>
+
+<script>
+    // Select all thumbnail images
+    const thumbnails = document.querySelectorAll('.thumbnails img, .thumbnails video');
+
+// Loop through each thumbnail
+thumbnails.forEach(thumbnail => {
+  thumbnail.addEventListener('click', handleClick);
+});
+
+// Function to handle thumbnail click
+function handleClick(event) {
+  // Get the clicked element (image or video)
+  const clickedThumbnail = event.target;
+
+  // Extract the source based on element type
+  const clickedSource = clickedThumbnail.tagName === 'VIDEO'
+    ? clickedThumbnail.getAttribute('src')
+    : clickedThumbnail.getAttribute('src');
+
+  // Find the corresponding media in the .images section based on the source
+  const targetMedia = document.querySelector(`.images [src="${clickedSource}"]`);
+
+  // If the target media is found, scroll smoothly to its position
+  if (targetMedia) {
+    targetMedia.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+  
+  </script>
+
+</body>
+
+</html>
+
+
+
