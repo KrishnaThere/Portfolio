@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Work in Progress</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+<ul>
+
+<li><a class="work" href="/work/">Work</a></li>
+
+<li><a class="about" href="https://krishnathere.github.io/Portfolio/">Home</a></li>
+
+<li><a class="connect" href="/">Connect</a></li>
+
+</ul>
+
+</nav>
+
+<div class="page">
+
+<div class="description">
+
+<p>
+
+Typeface:<br>
+
+Helvetica Regular<br>
+
+USDFDS:<br>
+
+A dairy consultancy company. The client wanted the logo to refect dairy and organic matter.<br><br>
+
+
+
+February 7, 2024 <br>
+
+February 8, 2024<br>
+
+Adobe Illustrator,<br>
+
+Adobe Photoshop
+
+</p>
+
+</div>
+
+<div class="project">
+   
+<div class="title">
+
+<div class="rows">
+
+<div class="workin">
+
+<h1>U</h1>
+
+<h1>S</h1>
+
+<h1>D</h1>
+
+<h1>F</h1>
+
+<h1>D</h1>
+
+<h1>S</h1>
+
+
+</div>
+
+<div class="progress">
+
+<h1>L</h1>
+
+<h1>O</h1>
+
+<h1>G</h1>
+
+<h1>O</h1>
+
+<h1> </h1>
+
+<h1> </h1>
+
+<h1>A</h1>
+
+<h1>N</h1>
+
+<h1>D</h1>
+
+</div>
+
+<div class="krishna">
+
+<h1>B</h1>
+
+<h1>R</h1>
+
+<h1>A</h1>
+
+<h1>N</h1>
+
+<h1>D</h1>
+
+
+</div>
+
+<div class="shah">
+
+<h1>I</h1>
+
+<h1>D</h1>
+
+<h1>E</h1>
+
+<h1>N</h1>
+
+<h1>T</h1>
+
+<h1>I</h1>
+
+<h1>T</h1>
+
+<h1>Y</h1>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="thumbnails">
+    <img class="car" src="images/dairy-04.png" alt="editorial-book">
+   <img class="eyemask" src="images/dairy-05.png" alt="breathe">
+   <img class="crossing" src="images/dairy-06.png" alt="poster">
+   <img class="breathe" src="images/dairy-07.png" alt="spread">
+
+</div>
+
+
+<div class="images">
+    <img src="images/dairy-04.png" alt="logo" class="breathe"> 
+    <img src="images/dairy-05.png" alt="logo" class="logo">
+    <img src="images/dairy-06.png" alt="" class="bookmark">
+    <img src="images/dairy-07.png" alt="" class="bookmark">
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+    // Select all thumbnail images
+    const thumbnails = document.querySelectorAll('.thumbnails img');
+  
+    // Loop through each thumbnail image
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', handleClick);
+    });
+
+
+    // Function to handle thumbnail click
+  function handleClick(event) {
+    // Get the clicked image element (the target of the event)
+    const clickedThumbnail = event.target;
+
+    // Extract the image source from the clicked thumbnail's `src` attribute
+    const clickedImageSrc = clickedThumbnail.getAttribute('src');
+
+    // Find the corresponding image in the .images section based on the source
+    const targetImage = document.querySelector(`.images img[src="${clickedImageSrc}"]`);
+
+    // If the target image is found, scroll smoothly to its position
+    if (targetImage) {
+      targetImage.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  </script>
+
+</body>
+
+</html>
+
+
+
