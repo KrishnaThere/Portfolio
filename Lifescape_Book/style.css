@@ -1,0 +1,306 @@
+* {
+
+  margin: 0;
+  
+  padding: 0;
+  
+  box-sizing: border-box;
+  
+  }
+  
+  
+  /* Navigation Styling */
+  
+  nav {
+    cursor:default;
+  
+  font-family: Helvetica, sans-serif;
+  
+  display: flex;
+  
+  justify-content: center; /* Center the navigation */
+  
+  margin: 1rem;
+  
+  margin-left: 3rem;
+  
+  margin-right: 3rem;
+  
+  height:4vh;
+  
+  }
+  
+  
+  nav ul {
+  
+  display: flex;
+  
+  list-style: none;
+  
+  justify-content: space-between;
+  
+  width: 100%; /* Control spacing between elements */
+  
+  }
+  
+  
+  nav li {
+  
+  margin: 0 1rem; /* Add horizontal spacing */
+  cursor:default;
+  
+  }
+  
+  
+  nav a {
+  
+  font-size: 1.3rem;
+  
+  font-weight:bold;
+  
+  color: red;
+  
+  text-decoration: none; /* Remove underline */
+  
+  cursor:default;
+  /* text-transform: uppercase; */
+  
+  }
+  
+  
+  
+  body {
+  
+  background-color: white;
+  
+  font-family: Helvetica, sans-serif;
+  
+  
+  
+  }
+  
+  .page{
+  
+  display: flex;
+  
+  flex-direction: row;
+  
+  justify-content: space-between;
+  
+  width: 100%;
+  cursor:default;
+  
+  }
+  
+
+  .thumbnails img {
+     width: 100px;
+   
+    object-fit: contain;
+
+      margin: 0 1rem;
+      position: absolute; /* Required for z-index */
+     
+    }
+    
+    
+    .thumbnails .cover{
+    top:60vh;
+    left:40vw;
+    }
+    
+    .thumbnails .one{
+      top:25vh;
+      left:40vw;
+    }
+    .thumbnails .two{
+  
+      top:45vh;
+      left:60vw;
+    }
+    .thumbnails .three{
+      
+      top:60vh;
+      left:5vw;
+    }
+    .thumbnails .four{
+    
+      top:20vh;
+      left:5vw;
+     
+    }
+    .thumbnails .five{
+    
+      top:35vh;
+      left:25vw;
+     
+    }
+
+    .thumbnails .full{
+    
+      top:10vh;
+      left:60vw;
+     
+    }
+    .thumbnails .sp1{
+      width:250px;
+      top:80vh;
+      left:50vw;
+     
+    }
+
+
+    .thumbnails img:hover {
+      transform: scale(2);
+      transition: transform 0.3s ease;
+      /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
+      z-index: 100;
+    }
+  
+  
+
+
+  .title {
+  
+    cursor:default;
+      background: none;
+      
+      height: 85vh;
+      
+      margin: 2.5rem;
+      
+      font-size: 2.2rem;
+      
+      font-weight: bold;
+      
+      color: red;
+      
+      
+      }
+      
+      
+      .rows {
+      
+      
+      width:69vw;
+      
+      display: flex;
+      
+      flex-direction: column;
+      
+      justify-content: space-between; /* Space the rows evenly within the title section */
+      
+      height: 100%; /* Make the rows occupy the full height of the title section */
+      
+      line-height: 0%;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      
+      }
+      
+      
+      .workin, .progress, .krishna, .shah {
+      
+      
+      display: flex;
+      
+      list-style: none;
+      
+      justify-content: space-between;
+      
+      width: 100%;
+      
+      }
+
+  .description {
+  
+  position: fixed; /* Fixes description on the left */
+  
+  left: 3rem; /* Adds space from the left */
+  
+  width: 15vw;
+  
+  bottom:5vh;
+  cursor:default;
+  
+  
+  }
+  
+  .description p{
+  
+  font-size: 1.3rem;
+  
+  color: red;
+  
+  font-weight: normal;
+  
+  
+  }
+  .description p a{
+    color: red;
+}
+
+
+  
+  
+  .project {
+  
+  margin-left: 25vw; /* Pushes the project section to the right of the description */
+  
+  width: calc(100% - 25vw); /* Takes up remaining space */
+  
+  height: 100vh; /* Full viewport height */
+  
+  overflow-y: scroll; /* Makes it scrollable vertically */
+  
+  bottom:0;
+  position: relative;
+  
+  }
+
+
+ 
+  
+  
+  
+  
+  
+  
+  .images{
+  
+  margin-top: 10px;
+  
+  bottom:0;
+  
+  }
+  
+  .images img {
+  
+  width: 75vw; /* Occupies the defined width */
+ height: 100vh; /* Occupies the defined height */
+  
+  object-fit: cover; /* Keeps aspect ratio and fits within the frame */
+  
+  }
+  .images .sp1{
+    width: 75vw; /* Occupies the defined width */  height: auto;
+
+    object-fit: contain;
+  }
+  
+
+  .project {
+    scrollbar-width: thin;
+    scrollbar-color: red white;
+  }
+  
+  .project::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .project::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 4px;
+  }
+  
+  
