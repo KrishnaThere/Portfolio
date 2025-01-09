@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Work in Progress</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+<ul>
+
+<li><a class="work" href="/work/">Work</a></li>
+
+<li><a class="about" href="https://krishnathere.github.io/Portfolio/">Home</a></li>
+
+<li><a class="connect" href="/">Connect</a></li>
+
+</ul>
+
+</nav>
+
+<div class="page">
+
+    <div class="description">
+        <p>
+            Experimental Jetset on:<br>
+    Past+Future=now<br>
+    Typeface: courier<br>
+    Made a doublesided Poster on the <a href="https://designmanifestos.org/experimental-jetset-past-plus-future-equals-now-on-the-act-of-referring-to-the-past-as-a-modernist-gesture/#:~:text=org-,Experimental%20Jetset%3A%20Past%20Plus%20Future%20Equals%20Now%20(On%20the%20Act,Past%20as%20a%20Modernist%20Gesture)&text=often%20mention%20modernism%20as%20an,primarily%20concerned%20with%20the%20future.">manifesto</a><br><br>
+    
+    October 1, 2024 <br>
+    October 23, 2024<br>
+    Adobe Illustrator,<br>
+    Adobe Indesign
+     </p>
+    </div>
+
+<div class="project">
+   
+    <div class="title">
+        <div class="rows">
+            <div class="workin">
+                <h1>P</h1>
+                <h1>A</h1>
+                <h1>S</h1>
+                <h1>T</h1>
+                <h1>+</h1>
+               
+            </div>
+            <div class="progress">
+                <h1>F</h1>
+                <h1>U</h1>
+                <h1>T</h1>
+                <h1>U</h1>
+                <h1>R</h1>
+                <h1>E</h1>
+                
+            </div>
+            <div class="krishna">
+                <h1>=</h1>
+                <h1>N</h1>
+                <h1>O</h1>
+                <h1>W</h1>
+           
+               
+            </div>
+            <div class="shah">
+                <h1>P</h1>
+                <h1>O</h1>
+                <h1>S</h1>
+                <h1>T</h1>
+                <h1>E</h1>
+                <h1>R</h1>
+               
+            </div>
+        </div>
+    </div>
+<div class="thumbnails">
+    <img class="car" src="posterimages/postermockup.png" alt="editorial-book">
+   <img class="eyemask" src="posterimages/posters.png" alt="breathe">
+   <img class="crossing" src="posterimages/zoom.png" alt="poster">
+   <img class="bookmark" src="posterimages/details.png" alt="spread">
+  <!-- <img src="breatheimages/Breathe.png" alt="logo" class="breathe"> -->
+
+</div>
+
+
+<div class="images">
+    <img src="posterimages/postermockup.png" alt="logo" class="breathe"> 
+    <img src="posterimages/details.png" alt="logo" class="logo">
+    <img src="posterimages/zoom.png" alt="" class="bookmark">
+    <img src="posterimages/posters.png" alt="" class="car">
+</div>
+
+</div>
+
+</div>
+
+<script>
+    // Select all thumbnail images
+    const thumbnails = document.querySelectorAll('.thumbnails img');
+  
+    // Loop through each thumbnail image
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', handleClick);
+    });
+
+
+    // Function to handle thumbnail click
+  function handleClick(event) {
+    // Get the clicked image element (the target of the event)
+    const clickedThumbnail = event.target;
+
+    // Extract the image source from the clicked thumbnail's `src` attribute
+    const clickedImageSrc = clickedThumbnail.getAttribute('src');
+
+    // Find the corresponding image in the .images section based on the source
+    const targetImage = document.querySelector(`.images img[src="${clickedImageSrc}"]`);
+
+    // If the target image is found, scroll smoothly to its position
+    if (targetImage) {
+      targetImage.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  </script>
+
+</body>
+
+</html>
+
+
+
