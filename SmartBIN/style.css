@@ -164,6 +164,16 @@
   object-fit: contain; /* Keeps aspect ratio and fits within the frame */
   
   }
+
+
+  .images video {
+  
+    width: 75vw; /* Occupies the defined width */
+   height: auto; /* Occupies the defined height */
+    
+    object-fit: contain; /* Keeps aspect ratio and fits within the frame */
+    
+    }
   
 
   .project {
