@@ -32,6 +32,16 @@
 
 </nav>
 
+<div class="connectlink">
+  <ul class="list">
+    <p>If you enjoyed looking at my work and have any constructive feedback or critique or if you wish to coloaborate or just wanna say hi, I am more than happy to connect. You can find me:<br><br>
+    
+    <a href="mailto:shahk153@newschool.com">@email</a><br>
+    <a href="https://www.instagram.com/krishna_shah16o7/">@instagram</a><br>
+    <a href="https://www.linkedin.com/in/krishna-shah-43471a243">@linkedin</a></p>
+  </ul>
+</div>
+
 <div class="page">
 
 <div class="description">
@@ -193,7 +203,23 @@ Adobe Photoshop
       targetImage.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+  
+  const connect= document.querySelector('.connect')
+  const connectlink= document.querySelector('.connectlink')
+  connect.addEventListener('click',(event)=>{
+event.preventDefault();
+connectlink.classList.toggle('active')
+  })
+
+  document.addEventListener('click', (event) => {
+  if (!connectlink.contains(event.target) && !connect.contains(event.target)) {
+    connectlink.classList.remove('active');
+  }
+});
+
   </script>
+
 
 </body>
 
