@@ -11,15 +11,24 @@
   <nav>
     <ul>
       <li><a class="work" href="https://krishnathere.github.io/Portfolio/work/">Work</a></li>
-      <li><a class="about" href="/">About</a></li>
+      <li><a class="about" href="https://krishnathere.github.io/Portfolio/About/">About</a></li>
       <li><a class="connect" href="/">Connect</a></li>
     </ul>
   </nav>
+  <div class="connectlink">
+    <ul class="list">
+      <p>If you enjoyed looking at my work and have any constructive feedback or critique or if you wish to coloaborate or just wanna say hi, I am more than happy to connect. You can find me:<br><br>
+      
+      <a href="mailto:shahk153@newschool.com">@email</a><br>
+      <a href="https://www.instagram.com/krishna_shah16o7/">@instagram</a><br>
+      <a href="https://www.linkedin.com/in/krishna-shah-43471a243">@linkedin</a></p>
+    </ul>
+  </div>
 <div class="title">
     <div class="rows">
         <div class="workin">
             <h1>W</h1>
-            <h1>O</h1>
+            <h1>O</h1> 
             <h1>R</h1>
             <h1>K</h1>
             <h1> </h1>
@@ -67,6 +76,21 @@
    <a href="https://krishnathere.github.io/Portfolio/Stickers/"> <img src="images/sticker.png" alt="logo" class="sticker"></a>
    <a href="https://krishnathere.github.io/Portfolio/SmartBIN/"> <video muted autoplay loop playsinline src="images/SmartBIN.mp4" alt="logo" class="bin"></a>
 </div>
+
+<script>
+  const connect= document.querySelector('.connect')
+  const connectlink= document.querySelector('.connectlink')
+  connect.addEventListener('click',(event)=>{
+event.preventDefault();
+connectlink.classList.toggle('active')
+  })
+
+  document.addEventListener('click', (event) => {
+  if (!connectlink.contains(event.target) && !connect.contains(event.target)) {
+    connectlink.classList.remove('active');
+  }
+});
+</script>
 
 </body>
 </html>

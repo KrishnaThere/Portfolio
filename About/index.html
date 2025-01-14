@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work in Progress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a class="work" href="https://krishnathere.github.io/Portfolio/work/">Work</a></li>
+      <li><a class="about" href="/">About</a></li>
+      <li><a class="connect" href="/">Connect</a></li>
+    </ul>
+  </nav>
+  <div class="connectlink">
+    <ul class="list">
+      <p>If you enjoyed looking at my work and have any constructive feedback or critique or if you wish to coloaborate or just wanna say hi, I am more than happy to connect. You can find me:<br><br>
+      
+      <a href="mailto:shahk153@newschool.com">@email</a><br>
+      <a href="https://www.instagram.com/krishna_shah16o7/">@instagram</a><br>
+      <a href="https://www.linkedin.com/in/krishna-shah-43471a243">@linkedin</a></p>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div class="video">
+ <video muted autoplay loop playsinline src="kishu.mp4" alt="logo" class="breathe"> </video>
+</div>
+<div class="aboutme">
+    <p>
+        Hi! I’m Krishna. Thank you for visiting my site and exploring my work.<br><br>
+
+I'm a girl from Gujarat, India, with a dream to embrace everything life has to offer. In my early high school years, I was on a clear path toward engineering, but the artist within me eventually took the lead. My dad’s transfer to the United States became a blessing in disguise, guiding me to one of the most celebrated design schools—Parsons School of Design.<br><br>
+
+Parsons has molded me into a very confident designer by exposing me to the vibrant New York City and extremely tallented and inspiring artists from every part of the globe to collaborte with. Being part of a  part of a global design community has offered me invaluable opportunities to collaborate with diverse minds and explore multiple perspectives and ideologies, profoundly enriching both my work and my personal growth.<br><br>
+
+I have a bunch of hobbies; the list includes but is not limited to: solving sudoku, hicking, dancing(also am really good at it), music(can't play any instruments or sing just have love for it), painting and many more.<br><br>
+
+To me, design is about more than just presenting complex concepts in a simplified and accessible way. It's about creating experiences that evoke strong, lasting emotions and provoke thought, leaving a meaningful impact on those who engage with it.
+    </p>
+</div>
+  </div>
+
+  <script>
+    const connect= document.querySelector('.connect')
+    const connectlink= document.querySelector('.connectlink')
+    connect.addEventListener('click',(event)=>{
+  event.preventDefault();
+  connectlink.classList.toggle('active')
+    })
+  
+    document.addEventListener('click', (event) => {
+    if (!connectlink.contains(event.target) && !connect.contains(event.target)) {
+      connectlink.classList.remove('active');
+    }
+  });
+  </script>
+  
+  </body>
+  </html>
