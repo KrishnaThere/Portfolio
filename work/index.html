@@ -32,6 +32,16 @@
 </ul>
 
 </nav>
+<div class="connectlink">
+  <ul class="list">
+    <p>If you enjoyed looking at my work and have any constructive feedback or critique or if you wish to coloaborate or just wanna say hi, I am more than happy to connect. You can find me:<br><br>
+    
+    <a href="mailto:shahk153@newschool.com">@email</a><br>
+    <a href="https://www.instagram.com/krishna_shah16o7/">@instagram</a><br>
+    <a href="https://www.linkedin.com/in/krishna-shah-43471a243">@linkedin</a></p>
+  </ul>
+</div>
+
 <div class="red-column">
     <ul class="section-list">
       <li data-section="logo-branding">Logo & Branding</li>
@@ -70,7 +80,7 @@
 
       "interactive-ui": [
         { title: "TheGameMaster", video: "images/website.mp4", link: "https://krishnathere.github.io/Portfolio/TheGameMaster/" },
-        { title: "Eyedropper(Game)", img: "images/face.png" },
+        // { title: "Eyedropper(Game)", img: "images/face.png" },
         { title: "SmartBin App Prototype", video: "images/SmartBIN.mp4" ,link: "https://krishnathere.github.io/Portfolio/SmartBIN/"},
       ],
       "poster-design": [
@@ -79,7 +89,7 @@
       ],
       "animation": [
         { title: "Breathe", video: "images/typo animation.mp4", link: "https://krishnathere.github.io/Portfolio/Breathe/" },
-        { title: "Self-Love", video: "images/typo animation.mp4" },
+        // { title: "Self-Love", video: "images/typo animation.mp4" },
       ],
       "illustration": [
         {title: "Lifescape Book", img: "images/lifescape.jpeg", link: "https://krishnathere.github.io/Portfolio/Lifescape_Book/" },
@@ -131,6 +141,22 @@
       });
     });
   });
+
+ 
+  const connect= document.querySelector('.connect')
+  const connectlink= document.querySelector('.connectlink')
+  connect.addEventListener('click',(event)=>{
+event.preventDefault();
+connectlink.classList.toggle('active')
+  })
+
+  document.addEventListener('click', (event) => {
+  if (!connectlink.contains(event.target) && !connect.contains(event.target)) {
+    connectlink.classList.remove('active');
+  }
+});
+
+
 </script>
  
 
