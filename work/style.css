@@ -356,7 +356,7 @@
     .connectlink p{
       padding-top: 6vh;
       padding:10vw;
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight:bold;
       color: red;
       text-decoration: none; /* Remove underline */
@@ -403,7 +403,7 @@
     
     nav a {
     
-    font-size: 1rem;
+    font-size: 1.2rem;
     
     font-weight:bold;
     
@@ -450,7 +450,7 @@
     
     .red-column .section-list li {
       margin-bottom: 1.5rem;
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: bold;
       opacity: 0; /* Start hidden */
       transform: translateX(-20px); /* Start slightly off-screen */
