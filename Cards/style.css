@@ -226,4 +226,53 @@
   .connectlink p a:hover{
     text-decoration: underline; /* Remove underline */
   }
+  @media screen and (max-width: 750px) {
+    .description {
+      position: relative;
+      margin: 6vw;
+      width: 88vw;
+      top: 0;
+    }
   
+    .project {
+      margin-left: 0;
+      width: 100%;
+      height: auto;
+    }
+  
+    .images img,
+    .images video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    .connectlink {
+      width: 55vw;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .description {
+      margin: 6vw;
+      width: 88vw;
+    }
+  
+    .project {
+      width: 100%;
+    }
+  
+    .images img,
+    .images video {
+      width: 100%;
+      height: auto;
+    }
+  
+    .connectlink {
+      width: 100vw;
+    }
+  
+    nav a {
+      font-size: 1.2rem;
+    }
+  }
