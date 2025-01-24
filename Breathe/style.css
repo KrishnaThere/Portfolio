@@ -255,6 +255,13 @@
     object-fit: cover; /* Keeps aspect ratio and fits within the frame */
     
     }
+    .images video{
+      width: 75vw; /* Occupies the defined width */
+    
+      height: 100vh; /* Occupies the defined height */
+      
+      object-fit: cover; /* Keeps aspect ratio and fits within the frame */
+    }
     
     .images .breathe{
         height:100vh;
@@ -433,6 +440,17 @@
     object-fit: cover; /* Keeps aspect ratio and fits within the frame */
     
     }
+
+    .images video {
+    
+      width: 100vw; /* Occupies the defined width */
+      height:auto;
+      
+     
+      
+      object-fit: cover; /* Keeps aspect ratio and fits within the frame */
+      
+      }
     
     .images .breathe{
         height:auto;
@@ -590,6 +608,17 @@
     object-fit: cover; /* Keeps aspect ratio and fits within the frame */
     
     }
+
+    .images video {
+    
+      width: 100vw; /* Occupies the defined width */
+      height:auto;
+      
+     
+      
+      object-fit: cover; /* Keeps aspect ratio and fits within the frame */
+      
+      }
     
     .images .breathe{
         height:40vh;
